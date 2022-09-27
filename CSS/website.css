@@ -1,0 +1,352 @@
+/*Website*/
+.section-header{
+    margin-left: 25px;
+}
+
+/*Cover*/
+.cover{
+    display: absolute;
+    height: 90vh;
+    width: 100%;
+    background-color: #001011;
+}
+#image-cover-overlay{
+    display: block;
+    height: 90vh;
+    width: 100%;
+}
+#image-cover-overlay img{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    opacity: 30%;
+}
+
+.cover-content{
+    display: block;
+    width: fit-content;
+    position: absolute;
+    left:50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+
+    padding: 10px 30px;
+    border-radius: 0.75rem;
+
+    text-align: center;
+}
+.cover-content h1{
+    font-size: 48px;
+    color: white;
+    letter-spacing: 0.4px;
+}
+@media screen and (max-width: 550px) {
+    .cover-content h1{
+        font-size: 20px;
+    }
+}
+.cover-content button{
+    font-size: 3vw;
+    padding: 10px;
+    border-radius: 0.75rem;
+    border: none;
+    color: white;
+    background-color: #BE8A60;
+}
+.cover-content button:hover{
+    background-color: #986D4A;
+    color: white;
+    transition: 0.25s;
+}
+#expand-circle-down{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 48px;
+    color: white;
+}
+
+
+/*About Us*/
+#about{
+    display: flex;
+    margin: auto auto;
+    align-items: center;
+    line-height: 1.5rem;
+    height: 20vh; 
+    justify-content: center;
+}
+.abt-text{
+    margin-left: 15%;
+    margin-right: 25px;
+    width: fit-content;
+    height: fit-content;
+}
+
+/*About Us-- Images*/
+.center-img-container img{
+    border-radius: 50%;
+    object-fit: cover;
+    height: 200px;
+    width: 200px;
+    /*radius: 125px */
+    /*half-radius: 62.5*/
+}
+.center-img-container{
+    display: flex;
+    gap: 100px;
+    width: fit-content;
+}
+#abt-photos{    
+    display: flex;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgrey;
+}
+.caption{
+    font-weight: 600;
+    font-size: 20px;
+}
+@media screen and (max-width:550px) {
+    .center-img-container{
+        display: flex;
+        gap:20px;
+        flex-wrap:wrap;
+        align-items: center;
+        justify-content: center;
+        margin: auto auto;
+    }
+    .center-img-container img{
+        width: 150px;
+    }
+}
+
+/*Projects-- Cover*/
+.projects-cover{
+    position: relative;
+    background-color: black;
+    width: 100vw;
+    height: 70vh;
+    
+}
+.projects-cover img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    opacity: 75%;
+}
+.projects-cover-text p{
+    position: absolute;
+    font-size: 20px;
+    left: 50%;
+    bottom: 20%;
+    width: 40%;
+    color: white;
+}
+.projects-cover-text h2{
+    position: absolute;
+    top:10%;
+    margin-left: 5vw;
+    font-size: 48px;
+    font-weight: 400;
+    color: white;
+}
+@media screen and (max-width: 550px) {
+    .projects-cover img{
+        height: 50vh;
+    }
+    .projects-cover{
+        height: 50vh;
+    }
+    .projects-cover-text p{
+        font-size: 18px;
+        text-align: center;
+        width: 90%;
+        left: 50%;
+        bottom: 10%;
+        transform: translateX(-50%);
+    }
+}
+
+/*Projects*/
+.projects{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: fit-content;
+    background-color: white;
+
+    justify-content: center;
+    align-self: center;
+}
+@media screen and (max-width:550px) {
+    .projects-cover-text{
+        display: relative;
+    
+    }
+}
+.project-img-link{
+    position: relative;
+    background-color: black;
+    width: 40%;
+    height: 40%;
+    margin: 2% 2%;
+}
+.project-img-link img{
+    opacity: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 80%;
+    transition: all 0.5s;
+}
+.project-img-link img:hover{
+    opacity: 90%;
+}
+.pil-heading{
+    position: absolute;
+    bottom: 20%; 
+    color: white; 
+    font-size: 30px;
+    right: 10%;
+}
+.pil-sub{
+    position: absolute;
+    bottom: 10%; 
+    color: white; 
+    font-size: 28px;
+    right: 10%;
+}
+@media screen and (max-width: 550px){
+    .pil-heading{
+        display: none;
+    }
+    .project-img-link{
+        width: 70%;
+    }
+}
+
+/*Contact us*/
+.contact-img-base{
+    position: relative;
+    width: 100vw;
+    height: fit-content;
+    object-fit: cover;
+    background-color: black;
+}
+.contact-img-base img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 40%;
+}
+.contact-img-base h2{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10%;
+    font-size: 48px;
+    font-weight: 600;
+    color: white;
+}
+.contact-img-base p{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 20%;
+    font-size: 24px;
+    font-weight: 400;
+    color: white;
+}
+/*Contact form*/
+.form{
+    display: flex;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.contact-form li{
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.contact-form input{
+    width: 300px;
+    line-height: 1.5rem;
+}
+.contact-form label{
+    float: left;
+    width: 100px;
+}
+.contact-form{
+    line-height: 1.5rem;
+    color: white;
+    font-family: "Commissioner", "Open Sans", sans-serif;
+}
+.contact-form li{
+    list-style-type: none;
+}
+.contact-form textarea{
+    line-height: 1.5rem;
+    font-size: 16px;
+    resize: none;
+}
+.submit{
+    padding: 10px;
+    font-size: 16px;
+}
+#hidden-text-area{
+    display: none;
+}
+textarea{
+    padding: 2px;
+}
+input{
+    padding: 2px;
+    font-size: 16px;
+    line-height: 1.5rem;
+    font-family: "Commissioner", "Open Sans", sans-serif;
+}
+@media screen and (max-width: 550px) {
+    .contact-img-base{
+        height: 100vh;
+    }
+    .contact-img-base h2{
+        text-align: center;
+    }
+    .contact-img-base p{
+       display: none;
+    }
+    .form{
+        display: flex;
+        position: absolute;
+        top: 30%;
+    }
+    #big-text-area, #message{
+        display: none;
+    }
+    #hidden-text-area{
+        display: block;
+        line-height: 1.5rem;
+        font-size: 16px;
+        resize: none;
+    }
+}
+/*Footer*/
+footer{
+    display: flex;
+    position: relative;
+    background-color: grey;
+    line-height: 1.5rem;
+    height: 5vh;
+    justify-content: center;
+    align-items: center;
+    
+}
+footer p{
+    color: white;
+    font-size: 16px;
+}

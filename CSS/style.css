@@ -1,0 +1,23 @@
+.clearfix{
+    clear: both;
+}
+.section-blank{
+    height: 10vh;
+    width: 100%;
+}
+html{
+    scroll-behavior: smooth;
+}
+.half-blank{
+    height: 5vh;
+    width: 100%;
+}
+h1, h2, h3, h4, p, textarea, button, a{
+    font-family: "Commissioner", "Open Sans", sans-serif;
+}
+h1{
+    font-weight: 300;
+}
+h2{
+    font-weight: 100;
+}
